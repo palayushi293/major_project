@@ -9,3 +9,7 @@ def home():
 @main.route('/user')
 def user():
     return 'this is a user page'
+
+@main.route('/diabetes')
+def dia():
+    return render_template('dia.html')

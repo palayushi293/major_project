@@ -13,12 +13,14 @@ def signup():
 
 @auth.route('/signup', methods=['POST'])
 def sign_post():
-   
+    name=request.form.get('name')
     email=request.form.get('email')
-    password=request.form.get('password')
+    password=request.form.get('pass')
     print(email)
-    
+    print(name)
     print(password)
     return redirect(url_for('auth.login'))
+
+
 
 
